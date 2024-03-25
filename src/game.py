@@ -28,7 +28,7 @@ class Game:
         roll_value = self.dice.roll()
 
         target_position = player_position + roll_value \
-            if player_position + roll_value <= self.board.get_total_cells \
+            if player_position + roll_value <= self.board.get_total_cells() \
             else player_position
 
         if self.board.has_moving_entity(target_position):

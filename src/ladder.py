@@ -7,5 +7,5 @@ class Ladder(MovingEntity):
 
 
     def get_id(self) -> str:
-        return 'L' + str(self.get_end_position)
+        return 'L' + str(self.get_end_position())
     

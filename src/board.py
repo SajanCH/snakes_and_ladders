@@ -30,7 +30,7 @@ class Board:
     def print_board(self) -> None:
         total_cells = self.dimension ** 2
         for i in range(total_cells, 0, -1):
-            print('|' + str(i) + '', end='')
+            print('|' + str(i) + '\t', end='')
 
             if self.has_moving_entity(i):
                 end_pos = self.moving_entities[i].get_id()

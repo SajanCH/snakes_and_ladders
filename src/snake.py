@@ -7,5 +7,5 @@ class Snake(MovingEntity):
 
 
     def get_id(self) -> str:
-        return 'S' + str(self.get_end_position)
+        return 'S' + str(self.get_end_position())
     
